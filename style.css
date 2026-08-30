@@ -1710,68 +1710,126 @@ footer small {
 }
 
 /* =========================================================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN — COMPREHENSIVE MOBILE-FIRST
+   Breakpoints: 768px | 600px | 480px | 375px | 320px
 ========================================================= */
+
+/* ── Tablet & Small Laptops ─────────────────────────── */
 @media (max-width: 900px) {
-    .navbar nav {
-        position: absolute;
-        top: 65px;
-        right: 20px;
-        width: 240px;
-        padding: 25px;
+
+    /* NAV */
+    .navbar {
+        padding: 14px 5%;
+    }
+
+    .nav-logo-text {
         display: none;
+    }
+
+    .navbar nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: min(280px, 80vw);
+        height: 100dvh;
+        padding: 80px 30px 40px;
+        display: flex;
         flex-direction: column;
-        gap: 18px;
-        background: rgba(37, 3, 12, 0.98);
-        border: 1px solid rgba(201, 154, 69, 0.4);
-        border-radius: 4px;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        gap: 22px;
+        background: rgba(22, 1, 6, 0.98);
+        border-left: 1px solid rgba(201, 154, 69, 0.4);
+        backdrop-filter: blur(20px);
+        box-shadow: -15px 0 40px rgba(0, 0, 0, 0.6);
+        transition: right 0.35s ease;
+        z-index: 999;
+        overflow-y: auto;
     }
 
     .navbar nav.open {
+        right: 0;
         display: flex;
+    }
+
+    .navbar nav a {
+        font-size: 13px;
+        letter-spacing: 2px;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(201, 154, 69, 0.15);
     }
 
     .menu-btn {
         display: block;
     }
 
+    .nav-music-toggle .music-status-text {
+        display: none;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 120px 5% 80px;
+    }
+
     .hero-meta-strip {
         flex-direction: column;
-        gap: 15px;
-        padding: 20px;
+        gap: 16px;
+        padding: 18px 20px;
+        margin: 20px auto;
     }
 
     .meta-divider {
-        width: 80%;
+        width: 70%;
         height: 1px;
     }
 
+    .meta-val {
+        font-size: 15px;
+    }
+
+    .hero-actions {
+        gap: 12px;
+    }
+
+    /* CARD */
+    .card-ceremonies-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* COUPLE */
     .couple-container {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     .ampersand {
         font-size: 60px;
     }
 
+    /* EVENTS */
     .event {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 12px;
     }
 
     .event-time-col {
         text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
     }
 
     .event-line {
         display: none;
     }
 
+    /* RSVP */
     .rsvp-container {
         grid-template-columns: 1fr;
+        gap: 35px;
     }
 
+    /* MUSIC WIDGET */
     .floating-music-widget {
         bottom: 15px;
         right: 15px;
@@ -1787,37 +1845,771 @@ footer small {
     }
 }
 
-@media (max-width: 550px) {
+/* ── Mobile Landscape / Large Phones (≤768px) ────────── */
+@media (max-width: 768px) {
+
+    /* SECTION */
     .section {
         padding: 70px 5%;
     }
 
+    /* HERO */
+    .hero {
+        padding: 110px 5% 70px;
+        background-attachment: scroll; /* Fix iOS parallax bug */
+    }
+
+    .hero::before { inset: 12px; }
+    .hero::after  { inset: 20px; }
+
+    .sanskrit-heading {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    .divine-caption {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .ornament {
+        font-size: 12px;
+        letter-spacing: 4px;
+        margin: 10px 0;
+    }
+
+    .solicit-text {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .couple-hero-banner {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .groom-hero, .bride-hero {
+        min-width: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .weds-badge {
+        padding: 5px 0;
+    }
+
+    .weds-badge i {
+        font-size: 44px;
+    }
+
+    .hero-meta-strip {
+        padding: 16px;
+        gap: 14px;
+        margin: 18px auto;
+    }
+
+    .meta-label {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .meta-val {
+        font-size: 14px;
+    }
+
+    .meta-time {
+        font-size: 11px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .gold-btn {
+        justify-content: center;
+        padding: 14px 20px;
+        font-size: 11px;
+    }
+
+    /* FORMAL CARD */
+    .formal-card {
+        padding: 12px;
+    }
+
+    .card-border-frame {
+        padding: 30px 18px;
+    }
+
+    .card-heading {
+        font-size: clamp(32px, 8vw, 48px);
+    }
+
+    .card-couple-block {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-weds-script span {
+        font-size: 40px;
+    }
+
+    .person-title {
+        font-size: clamp(26px, 7vw, 38px);
+    }
+
+    /* COUPLE SECTION */
+    .photo-frame {
+        width: min(220px, 70vw);
+        height: min(280px, 90vw);
+    }
+
+    .person h3 {
+        font-size: 28px;
+    }
+
+    /* COUNTDOWN */
+    .countdown-section {
+        background-attachment: scroll;
+        padding: 70px 5%;
+    }
+
+    .countdown {
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .count-box {
+        flex: 1;
+        min-width: 0;
+        padding: 18px 6px;
+    }
+
+    .count-box strong {
+        font-size: 32px;
+    }
+
+    .count-box span {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .calendar-actions {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .cal-btn {
+        justify-content: center;
+        padding: 12px 16px;
+    }
+
+    /* EVENTS */
+    .event-content {
+        padding: 20px 16px;
+    }
+
+    .event-content h3 {
+        font-size: 26px;
+    }
+
+    /* VENUE */
+    .venue {
+        background-attachment: scroll;
+        padding: 70px 5%;
+    }
+
+    .venue-content h2 {
+        font-size: clamp(28px, 7vw, 45px);
+    }
+
+    .venue-actions {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .map-container iframe {
+        height: 280px;
+    }
+
+    /* RSVP */
+    .rsvp-content h2 {
+        font-size: clamp(28px, 7vw, 42px);
+    }
+
+    .qr-box {
+        max-width: 100%;
+    }
+
+    .qr-image-wrapper {
+        width: 170px;
+        height: 170px;
+    }
+
+    /* WISHES SECTION */
+    .wishes h2 {
+        font-size: clamp(28px, 7vw, 42px);
+    }
+
+    .compliments-highlight {
+        font-size: clamp(32px, 8vw, 48px);
+    }
+
+    /* MUSIC WIDGET */
+    .floating-music-widget {
+        bottom: 12px;
+        right: 12px;
+        padding: 6px 10px 6px 8px;
+    }
+
+    .music-info {
+        min-width: 100px;
+    }
+
+    .music-track-title {
+        font-size: 10px;
+        max-width: 100px;
+    }
+
+    .music-label {
+        font-size: 7px;
+    }
+}
+
+/* ── Standard Phones (≤480px) ────────────────────────── */
+@media (max-width: 480px) {
+
+    /* LOADER */
+    .loader-content h2 {
+        font-size: 36px;
+    }
+
+    .loader-symbol {
+        font-size: 44px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        padding: 12px 4%;
+    }
+
+    .nav-logo {
+        font-size: 16px;
+    }
+
+    .tamil-symbol {
+        font-size: 20px;
+    }
+
+    .nav-music-toggle {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 100px 4% 70px;
+        min-height: 100svh;
+    }
+
+    .hero::before { inset: 8px; }
+    .hero::after  { inset: 14px; }
+
+    .pillaiyar-suzhi {
+        font-size: 32px;
+    }
+
+    .sanskrit-heading {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .host-names {
+        font-size: 18px;
+    }
+
+    .host-agency {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .solicit-text {
+        font-size: 14px;
+    }
+
+    .groom-name, .bride-name {
+        font-size: clamp(28px, 9vw, 42px);
+    }
+
+    .honorific {
+        font-size: 14px;
+    }
+
+    .degrees {
+        font-size: 10px;
+    }
+
+    .bride-parentage {
+        font-size: 12px;
+    }
+
+    .ornament {
+        font-size: 11px;
+        letter-spacing: 3px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* SECTIONS */
+    .section {
+        padding: 60px 4%;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(28px, 8vw, 40px);
+    }
+
+    .section-title {
+        font-size: clamp(26px, 7vw, 36px);
+    }
+
+    /* FORMAL CARD */
+    .card-border-frame {
+        padding: 22px 12px;
+    }
+
+    .card-heading {
+        font-size: clamp(28px, 9vw, 44px);
+    }
+
+    .card-parents h4 {
+        font-size: clamp(16px, 5vw, 22px);
+    }
+
+    .card-solicitation {
+        font-size: 14px;
+    }
+
+    .person-title {
+        font-size: clamp(22px, 7vw, 32px);
+    }
+
+    .title-prefix {
+        font-size: 14px;
+    }
+
+    .qualification {
+        font-size: 11px;
+    }
+
+    .ceremony-box {
+        padding: 18px 14px;
+    }
+
+    .ceremony-datetime {
+        font-size: 16px;
+    }
+
+    .ceremony-time {
+        font-size: 13px;
+    }
+
+    .ceremony-place {
+        font-size: 12px;
+    }
+
+    .compliment-names {
+        font-size: 28px;
+    }
+
+    /* COUPLE */
+    .person {
+        padding: 25px 18px;
+    }
+
+    .photo-frame {
+        width: min(190px, 65vw);
+        height: min(250px, 85vw);
+    }
+
+    .person h3 {
+        font-size: 26px;
+    }
+
+    .edu-badge {
+        font-size: 10px;
+    }
+
+    .person-bio strong {
+        font-size: 13px;
+    }
+
+    /* COUNTDOWN */
     .countdown {
         gap: 8px;
     }
 
     .count-box {
-        width: 70px;
-        padding: 15px 5px;
+        padding: 14px 4px;
     }
 
     .count-box strong {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .count-box span {
+        font-size: 7px;
+    }
+
+    .countdown-content h2 {
+        font-size: clamp(26px, 7vw, 40px);
+    }
+
+    .countdown-target-label {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    /* EVENTS */
+    .event-badge {
+        font-size: 8px;
+        padding: 2px 8px;
+    }
+
+    .event-time {
+        font-size: 16px;
+    }
+
+    .event-date {
+        font-size: 11px;
+    }
+
+    .event-content {
+        padding: 16px 14px;
+    }
+
+    .event-content h3 {
+        font-size: 22px;
+    }
+
+    .event-content p {
+        font-size: 13px;
+    }
+
+    .event-eyebrow {
         font-size: 8px;
     }
 
+    .event-venue-tag {
+        font-size: 11px;
+    }
+
+    /* VENUE */
+    .venue-content h2 {
+        font-size: clamp(24px, 7vw, 38px);
+    }
+
+    .venue-address {
+        font-size: 16px;
+    }
+
+    .map-container iframe {
+        height: 240px;
+    }
+
+    /* RSVP */
+    .rsvp-content h2 {
+        font-size: clamp(24px, 7vw, 36px);
+    }
+
+    .rsvp-content p {
+        font-size: 13px;
+    }
+
+    .wishes-input-card {
+        padding: 18px 14px;
+    }
+
+    .wishes-input-card h4 {
+        font-size: 17px;
+    }
+
+    .qr-image-wrapper {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* WISHES */
+    .wishes {
+        padding: 70px 4%;
+    }
+
+    .wishes h2 {
+        font-size: clamp(24px, 7vw, 36px);
+    }
+
+    .compliments-highlight {
+        font-size: clamp(28px, 8vw, 44px);
+    }
+
+    .quote-body {
+        font-size: 17px;
+    }
+
+    .hosts-bottom-signature {
+        font-size: 18px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 40px 4%;
+    }
+
+    .footer-names {
+        font-size: 22px;
+    }
+
+    .footer-wedding-date {
+        font-size: 11px;
+    }
+
+    /* MUSIC WIDGET — compact on small phones */
+    .floating-music-widget {
+        bottom: 10px;
+        right: 10px;
+        padding: 5px 8px 5px 6px;
+        gap: 8px;
+    }
+
+    .music-info {
+        min-width: 85px;
+    }
+
+    .music-disc-badge {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+
+    .music-control-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+}
+
+/* ── Small Phones / iPhone SE / Galaxy A (≤375px) ────── */
+@media (max-width: 375px) {
+
+    .hero {
+        padding: 90px 3% 60px;
+    }
+
+    .host-names {
+        font-size: 16px;
+    }
+
+    .groom-name, .bride-name {
+        font-size: clamp(24px, 8vw, 34px);
+    }
+
+    .hero-meta-strip {
+        padding: 14px 12px;
+        gap: 12px;
+    }
+
+    .meta-val {
+        font-size: 13px;
+    }
+
+    .section {
+        padding: 55px 4%;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(24px, 8vw, 34px);
+    }
+
+    .count-box {
+        padding: 12px 3px;
+    }
+
+    .count-box strong {
+        font-size: 22px;
+    }
+
+    .count-box span {
+        font-size: 6.5px;
+        letter-spacing: 0.5px;
+    }
+
+    .person-title {
+        font-size: clamp(20px, 7vw, 28px);
+    }
+
+    .card-heading {
+        font-size: clamp(24px, 9vw, 36px);
+    }
+
+    .formal-card {
+        padding: 8px;
+    }
+
     .card-border-frame {
-        padding: 25px 15px;
+        padding: 18px 10px;
     }
 
-    .hero::before {
-        inset: 10px;
+    .event-content h3 {
+        font-size: 20px;
     }
 
-    .hero::after {
-        inset: 16px;
+    .venue-content h2 {
+        font-size: clamp(22px, 7vw, 30px);
+    }
+
+    .map-container iframe {
+        height: 210px;
+    }
+
+    .photo-frame {
+        width: min(170px, 60vw);
+        height: min(220px, 80vw);
+    }
+
+    /* Floating widget — icon only on very small phones */
+    .music-info {
+        display: none;
+    }
+
+    .floating-music-widget {
+        border-radius: 50%;
+        padding: 0;
+        width: 46px;
+        height: 46px;
+        justify-content: center;
+    }
+
+    .music-disc-badge {
+        display: none;
+    }
+}
+
+/* ── Extra Small / Legacy Phones (≤320px) ────────────── */
+@media (max-width: 320px) {
+
+    .hero {
+        padding: 85px 3% 55px;
+    }
+
+    .groom-name, .bride-name {
+        font-size: 22px;
+    }
+
+    .section {
+        padding: 50px 3%;
+    }
+
+    .count-box {
+        padding: 10px 2px;
+    }
+
+    .count-box strong {
+        font-size: 18px;
+    }
+
+    .gold-btn {
+        padding: 12px 14px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .section-heading h2 {
+        font-size: 22px;
+    }
+
+    .card-heading {
+        font-size: 22px;
+    }
+
+    .event-content h3 {
+        font-size: 18px;
+    }
+}
+
+/* ── Touch / Tap Improvements ─────────────────────────── */
+@media (hover: none) and (pointer: coarse) {
+    .gold-btn:hover {
+        transform: none;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        filter: none;
+    }
+
+    .gold-btn:active {
+        transform: scale(0.97);
+        filter: brightness(0.95);
+    }
+
+    .count-box:hover {
+        transform: none;
+    }
+
+    .person:hover {
+        transform: none;
+        box-shadow: var(--shadow-soft);
+    }
+
+    .detail-card:hover {
+        transform: none;
+    }
+
+    .music-control-btn:hover {
+        transform: none;
+    }
+
+    .music-control-btn:active {
+        transform: scale(0.92);
+    }
+}
+
+/* ── Landscape Phones ─────────────────────────────────── */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: unset;
+        padding: 80px 5% 50px;
+    }
+
+    .hero::before, .hero::after {
+        display: none;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .mandala {
+        display: none;
+    }
+
+    .countdown-section {
+        min-height: unset;
+        padding: 50px 5%;
+    }
+
+    .loader-content h2 {
+        font-size: 30px;
+    }
+
+    .loader-symbol {
+        font-size: 36px;
+        margin-bottom: 4px;
     }
 }
