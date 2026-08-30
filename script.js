@@ -429,3 +429,73 @@ if (sendWishBtn) {
         }, 300);
     });
 }
+
+/* =========================================================
+   GOD FIGURE FLOWER SHOWER
+   Continuously rains flower petals from Ganesha & Lakshmi
+========================================================= */
+(function initGodFlowerShower() {
+    // Flower/petal emoji palette — auspicious & colourful
+    const petals = [
+        "🌸", "🌺", "🌼", "🌻", "💐", "🌹",
+        "🪷", "✿", "❀", "🌷", "🏵️", "⚘"
+    ];
+
+    /**
+     * Spawn a single animated petal inside the given container.
+     * @param {HTMLElement} container  .god-flower-shower div
+     * @param {number}      side       0 = left (Ganesha), 1 = right (Lakshmi)
+     */
+    function spawnPetal(container, side) {
+        const el = document.createElement("span");
+        el.className = "petal";
+        el.textContent = petals[Math.floor(Math.random() * petals.length)];
+
+        // Random horizontal position within the container width
+        const containerW = container.offsetWidth || 210;
+        el.style.left = Math.random() * containerW + "px";
+
+        // Randomise size, duration, delay
+        const size    = 12 + Math.random() * 14;        // 12–26px
+        const dur     = 2.8 + Math.random() * 2.5;     // 2.8–5.3 s
+        const delay   = Math.random() * dur;            // stagger start
+
+        el.style.fontSize        = size + "px";
+        el.style.animationDuration  = dur + "s";
+        el.style.animationDelay     = "-" + delay + "s"; // pre-start so petals appear immediately
+
+        container.appendChild(el);
+
+        // Remove the element after one full cycle to avoid DOM bloat
+        const cleanupMs = (dur + 0.2) * 1000;
+        setTimeout(() => {
+            el.remove();
+        }, cleanupMs);
+    }
+
+    /**
+     * Continuously spawn petals for a given container.
+     * @param {HTMLElement} container
+     * @param {number}      side
+     * @param {number}      intervalMs  How often (ms) to spawn a new petal
+     */
+    function startShower(container, side, intervalMs) {
+        // Spawn a burst immediately so petals are visible right away
+        const burstCount = 8;
+        for (let i = 0; i < burstCount; i++) {
+            setTimeout(() => spawnPetal(container, side), i * 120);
+        }
+
+        // Then keep a steady drizzle
+        setInterval(() => spawnPetal(container, side), intervalMs);
+    }
+
+    // Initialise after the page has loaded
+    window.addEventListener("load", () => {
+        const leftContainer  = document.getElementById("flowerLeft");
+        const rightContainer = document.getElementById("flowerRight");
+
+        if (leftContainer)  startShower(leftContainer,  0, 380);
+        if (rightContainer) startShower(rightContainer, 1, 380);
+    });
+})();
