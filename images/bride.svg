@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520">
+  <defs>
+    <linearGradient id="bgGradBride" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5f5"/>
+      <stop offset="50%" stop-color="#fdf0e6"/>
+      <stop offset="100%" stop-color="#fbe2d2"/>
+    </linearGradient>
+    
+    <linearGradient id="skinGradBride" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fce1c9"/>
+      <stop offset="100%" stop-color="#f0be95"/>
+    </linearGradient>
+
+    <linearGradient id="goldGradBride" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0a6"/>
+      <stop offset="40%" stop-color="#e6b843"/>
+      <stop offset="100%" stop-color="#ad7a1d"/>
+    </linearGradient>
+
+    <linearGradient id="sareeRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9184a"/>
+      <stop offset="40%" stop-color="#a00e31"/>
+      <stop offset="100%" stop-color="#600418"/>
+    </linearGradient>
+
+    <linearGradient id="jasmineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f2f6"/>
+    </linearGradient>
+
+    <filter id="softShadowBride" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#4a1525" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="400" height="520" rx="16" fill="url(#bgGradBride)"/>
+  
+  <!-- Subtle Mandala Ring Backdrop -->
+  <circle cx="200" cy="200" r="140" fill="none" stroke="#e6b843" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.4"/>
+  <circle cx="200" cy="200" r="165" fill="none" stroke="#e6b843" stroke-width="1" stroke-dasharray="2,8" opacity="0.3"/>
+  <circle cx="200" cy="200" r="120" fill="rgba(255,255,255,0.4)"/>
+
+  <!-- Decorative Floral Hanging at top -->
+  <g opacity="0.6">
+    <path d="M 20 0 Q 70 30 120 0 Q 170 30 220 0 Q 270 30 320 0 Q 370 30 400 0" fill="none" stroke="#c9184a" stroke-width="2"/>
+    <circle cx="70" cy="22" r="6" fill="#ff7675"/>
+    <circle cx="170" cy="22" r="6" fill="#ff7675"/>
+    <circle cx="270" cy="22" r="6" fill="#ff7675"/>
+    <circle cx="370" cy="22" r="6" fill="#ff7675"/>
+  </g>
+
+  <!-- BRIDE CHARACTER -->
+  <g filter="url(#softShadowBride)">
+    <!-- Hair Bun Behind Head (Kondai) with Jasmine Flowers (Malligai Poo) -->
+    <g>
+      <!-- Bun Base -->
+      <ellipse cx="200" cy="120" rx="85" ry="70" fill="#1e272e"/>
+      
+      <!-- Jasmine Flower Ring Around Bun (White Petals with orange center dots) -->
+      <!-- Left side jasmine garland -->
+      <circle cx="125" cy="120" r="11" fill="url(#jasmineGrad)" stroke="#e5e5e5" stroke-width="0.5"/>
+      <circle cx="120" cy="140" r="12" fill="url(#jasmineGrad)" stroke="#e5e5e5" stroke-width="0.5"/>
+      <circle cx="122" cy="165" r="13" fill="url(#jasmineGrad)" stroke="#e5e5e5" stroke-width="0.5"/>
+      <circle cx="130" cy="190" r="12" fill="url(#jasmineGrad)" stroke="#e5e5e5" stroke-width="0.5"/>
+      <circle cx="140" cy="210" r="11" fill="url(#jasmineGrad)" stroke="#e5e5e5" stroke-width="0.5"/>
+
+      <!-- Right side jasmine garland -->
+      <circle cx="275" cy="120" r="11" fill="url(#jasmineGrad)" stroke="#e5e5e5" stroke-width="0.5"/>
+      <circle cx="280" cy="140" r="12" fill="url(#jasmineGrad)" stroke="#e5e5e5" stroke-width="0.5"/>
+      <circle cx="278" cy="165" r="13" fill="url(#jasmineGrad)" stroke="#e5e5e5" stroke-width="0.5"/>
+      <circle cx="270" cy="190" r="12" fill="url(#jasmineGrad)" stroke="#e5e5e5" stroke-width="0.5"/>
+      <circle cx="260" cy="210" r="11" fill="url(#jasmineGrad)" stroke="#e5e5e5" stroke-width="0.5"/>
+
+      <!-- Top Jasmine Row -->
+      <circle cx="145" cy="95" r="11" fill="url(#jasmineGrad)"/>
+      <circle cx="170" cy="80" r="12" fill="url(#jasmineGrad)"/>
+      <circle cx="200" cy="74" r="13" fill="url(#jasmineGrad)"/>
+      <circle cx="230" cy="80" r="12" fill="url(#jasmineGrad)"/>
+      <circle cx="255" cy="95" r="11" fill="url(#jasmineGrad)"/>
+
+      <!-- Red Rose Highlights in Hair -->
+      <circle cx="130" cy="105" r="9" fill="#c9184a"/>
+      <circle cx="270" cy="105" r="9" fill="#c9184a"/>
+      <circle cx="200" cy="65" r="9" fill="#c9184a"/>
+    </g>
+
+    <!-- Body / Rich Red & Gold Bridal Silk Saree -->
+    <path d="M 100 400 C 100 330, 130 300, 200 300 C 270 300, 300 330, 300 400 L 320 520 L 80 520 Z" fill="url(#sareeRedGrad)"/>
+    
+    <!-- Blouse Neckline & Gold Border -->
+    <path d="M 160 300 Q 200 335 240 300 L 235 285 Q 200 315 165 285 Z" fill="#ffffff" stroke="url(#goldGradBride)" stroke-width="2"/>
+
+    <!-- Saree Pallu / Pleated Zari Drape over shoulder -->
+    <path d="M 165 300 C 145 320, 115 360, 105 440 L 95 520 L 145 520 L 155 430 C 160 370, 175 330, 185 305 Z" fill="url(#sareeRedGrad)" stroke="url(#goldGradBride)" stroke-width="1.5"/>
+    
+    <!-- Zari Work Lines on Saree -->
+    <path d="M 105 440 L 95 520 L 115 520 L 125 440 Z" fill="url(#goldGradBride)"/>
+    <line x1="130" y1="360" x2="160" y2="360" stroke="url(#goldGradBride)" stroke-width="2"/>
+    <line x1="120" y1="400" x2="160" y2="400" stroke="url(#goldGradBride)" stroke-width="2"/>
+    <line x1="110" y1="440" x2="160" y2="440" stroke="url(#goldGradBride)" stroke-width="2"/>
+    <line x1="100" y1="480" x2="160" y2="480" stroke="url(#goldGradBride)" stroke-width="2"/>
+
+    <!-- Neck -->
+    <path d="M 175 245 L 175 295 C 175 310, 225 310, 225 295 L 225 245 Z" fill="url(#skinGradBride)"/>
+
+    <!-- TEMPLE BRIDAL JEWELRY / HARAM (மாங்காய் மாலை / காசு மாலை) -->
+    <!-- Choker Necklace -->
+    <path d="M 172 270 Q 200 295 228 270" fill="none" stroke="url(#goldGradBride)" stroke-width="4"/>
+    <circle cx="200" cy="288" r="4" fill="#c9184a"/>
+
+    <!-- Medium Gold Haram -->
+    <path d="M 160 288 Q 200 330 240 288" fill="none" stroke="url(#goldGradBride)" stroke-width="3.5"/>
+    <!-- Gold Coin / Mango Drops -->
+    <circle cx="180" cy="305" r="3" fill="url(#goldGradBride)"/>
+    <circle cx="190" cy="314" r="3.5" fill="url(#goldGradBride)"/>
+    <circle cx="200" cy="318" r="4.5" fill="url(#goldGradBride)"/>
+    <circle cx="210" cy="314" r="3.5" fill="url(#goldGradBride)"/>
+    <circle cx="220" cy="305" r="3" fill="url(#goldGradBride)"/>
+
+    <!-- Long Grand Wedding Haram with Ruby Pendant -->
+    <path d="M 148 300 Q 200 375 252 300" fill="none" stroke="url(#goldGradBride)" stroke-width="4"/>
+    <circle cx="200" cy="360" r="8" fill="url(#goldGradBride)"/>
+    <circle cx="200" cy="360" r="5" fill="#c9184a"/>
+
+    <!-- Ears & Grand Jhumkas (ஜிமிக்கி) -->
+    <!-- Left Ear & Jhumka -->
+    <ellipse cx="132" cy="195" rx="10" ry="16" fill="url(#skinGradBride)"/>
+    <g transform="translate(132, 205)">
+      <circle cx="0" cy="0" r="4" fill="url(#goldGradBride)"/>
+      <path d="M -7 8 L 7 8 L 5 16 L -5 16 Z" fill="url(#goldGradBride)"/>
+      <circle cx="-4" cy="18" r="1.5" fill="url(#goldGradBride)"/>
+      <circle cx="0" cy="19" r="1.8" fill="url(#goldGradBride)"/>
+      <circle cx="4" cy="18" r="1.5" fill="url(#goldGradBride)"/>
+    </g>
+
+    <!-- Right Ear & Jhumka -->
+    <ellipse cx="268" cy="195" rx="10" ry="16" fill="url(#skinGradBride)"/>
+    <g transform="translate(268, 205)">
+      <circle cx="0" cy="0" r="4" fill="url(#goldGradBride)"/>
+      <path d="M -7 8 L 7 8 L 5 16 L -5 16 Z" fill="url(#goldGradBride)"/>
+      <circle cx="-4" cy="18" r="1.5" fill="url(#goldGradBride)"/>
+      <circle cx="0" cy="19" r="1.8" fill="url(#goldGradBride)"/>
+      <circle cx="4" cy="18" r="1.5" fill="url(#goldGradBride)"/>
+    </g>
+
+    <!-- Head / Face -->
+    <path d="M 138 170 C 138 110, 262 110, 262 170 C 262 245, 238 265, 200 265 C 162 265, 138 245, 138 170 Z" fill="url(#skinGradBride)"/>
+
+    <!-- Cute Rosy Blush on Cheeks -->
+    <ellipse cx="158" cy="206" rx="14" ry="8" fill="#ff7675" opacity="0.45"/>
+    <ellipse cx="242" cy="206" rx="14" ry="8" fill="#ff7675" opacity="0.45"/>
+
+    <!-- Eyes (Cute, big, sparkling with graceful lashes) -->
+    <ellipse cx="170" cy="180" rx="9.5" ry="12" fill="#2d3436"/>
+    <ellipse cx="230" cy="180" rx="9.5" ry="12" fill="#2d3436"/>
+    <!-- Eyelashes -->
+    <path d="M 158 174 Q 163 168 170 169" fill="none" stroke="#1e272e" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 155 178 Q 160 172 165 174" fill="none" stroke="#1e272e" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 242 174 Q 237 168 230 169" fill="none" stroke="#1e272e" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 245 178 Q 240 172 235 174" fill="none" stroke="#1e272e" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Eye Highlights -->
+    <circle cx="167" cy="176" r="4" fill="#ffffff"/>
+    <circle cx="173" cy="184" r="1.8" fill="#ffffff"/>
+    <circle cx="227" cy="176" r="4" fill="#ffffff"/>
+    <circle cx="233" cy="184" r="1.8" fill="#ffffff"/>
+
+    <!-- Delicate Curved Eyebrows -->
+    <path d="M 155 160 Q 170 148 184 158" fill="none" stroke="#1e272e" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 216 158 Q 230 148 245 160" fill="none" stroke="#1e272e" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Red Bridal Pottu / Bindi with White Chandan Dots -->
+    <circle cx="200" cy="155" r="4" fill="#c9184a"/>
+    <circle cx="200" cy="148" r="1.5" fill="#ffffff"/>
+
+    <!-- Nose & Cute Gold Nose Ring (Mookuthi / மூக்குத்தி) -->
+    <path d="M 200 180 Q 203 194 198 196 Q 195 196 195 194" fill="none" stroke="#d49568" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="204" cy="192" r="2.5" fill="url(#goldGradBride)"/>
+    <circle cx="204" cy="192" r="1" fill="#c9184a"/>
+
+    <!-- Sweet Smiling Red Lips -->
+    <path d="M 186 216 Q 200 228 214 216 Q 200 234 186 216 Z" fill="#c9184a"/>
+
+    <!-- Front Parted Hair -->
+    <path d="M 138 165 C 135 125, 160 100, 200 120 C 240 100, 265 125, 262 165 C 255 130, 235 120, 200 132 C 165 120, 145 130, 138 165 Z" fill="#1e272e"/>
+
+    <!-- MAANG TIKKA / NETHI CHUTTI (நெற்றிச்சுட்டி) -->
+    <!-- Center Chain -->
+    <line x1="200" y1="100" x2="200" y2="135" stroke="url(#goldGradBride)" stroke-width="2.5"/>
+    <!-- Side Chains -->
+    <path d="M 145 140 Q 170 125 200 135 Q 230 125 255 140" fill="none" stroke="url(#goldGradBride)" stroke-width="2"/>
+    <!-- Center Tikka Bell Pendant with Ruby -->
+    <circle cx="200" cy="140" r="5.5" fill="url(#goldGradBride)"/>
+    <circle cx="200" cy="140" r="3" fill="#c9184a"/>
+    <circle cx="200" cy="146" r="1.5" fill="url(#goldGradBride)"/>
+
+    <!-- WEDDING GARLAND (மாலை / Rose & Jasmine Garland) -->
+    <g>
+      <!-- Left Garland -->
+      <ellipse cx="140" cy="320" rx="14" ry="12" fill="#ffffff" stroke="#e0d6be" stroke-width="1"/>
+      <ellipse cx="135" cy="340" rx="15" ry="13" fill="#c9184a"/>
+      <ellipse cx="130" cy="365" rx="16" ry="14" fill="#ffffff" stroke="#e0d6be" stroke-width="1"/>
+      <ellipse cx="128" cy="395" rx="17" ry="15" fill="url(#goldGradBride)"/>
+      <ellipse cx="130" cy="425" rx="16" ry="14" fill="#c9184a"/>
+      <ellipse cx="135" cy="455" rx="16" ry="14" fill="#ffffff" stroke="#e0d6be" stroke-width="1"/>
+      <ellipse cx="145" cy="485" rx="17" ry="15" fill="#c9184a"/>
+
+      <!-- Right Garland -->
+      <ellipse cx="260" cy="320" rx="14" ry="12" fill="#ffffff" stroke="#e0d6be" stroke-width="1"/>
+      <ellipse cx="265" cy="340" rx="15" ry="13" fill="#c9184a"/>
+      <ellipse cx="270" cy="365" rx="16" ry="14" fill="#ffffff" stroke="#e0d6be" stroke-width="1"/>
+      <ellipse cx="272" cy="395" rx="17" ry="15" fill="url(#goldGradBride)"/>
+      <ellipse cx="270" cy="425" rx="16" ry="14" fill="#c9184a"/>
+      <ellipse cx="265" cy="455" rx="16" ry="14" fill="#ffffff" stroke="#e0d6be" stroke-width="1"/>
+      <ellipse cx="255" cy="485" rx="17" ry="15" fill="#c9184a"/>
+
+      <!-- Garland Bottom Center Knot -->
+      <circle cx="200" cy="505" r="16" fill="#c9184a"/>
+      <circle cx="200" cy="505" r="10" fill="url(#goldGradBride)"/>
+      <!-- Hanging Tassels -->
+      <path d="M 194 515 L 190 540 L 210 540 L 206 515 Z" fill="url(#goldGradBride)"/>
+    </g>
+  </g>
+
+  <!-- Sparkles & Floating Hearts/Petals -->
+  <g fill="#e6b843">
+    <path d="M 60 140 Q 65 150 75 150 Q 65 150 60 160 Q 55 150 45 150 Q 55 150 60 140 Z"/>
+    <path d="M 340 150 Q 344 158 352 158 Q 344 158 340 166 Q 336 158 328 158 Q 336 158 340 150 Z"/>
+    <circle cx="75" cy="220" r="3" fill="#ff7675"/>
+    <circle cx="330" cy="240" r="3.5" fill="#ff7675"/>
+  </g>
+
+  <!-- Cute Badge Label at bottom -->
+  <g transform="translate(145, 480)">
+    <rect width="110" height="28" rx="14" fill="#600418" stroke="#e6b843" stroke-width="1.5"/>
+    <text x="55" y="18" font-family="'Cinzel', serif" font-size="12" font-weight="bold" fill="#fff0a6" text-anchor="middle" letter-spacing="2">BRIDE</text>
+  </g>
+</svg>
