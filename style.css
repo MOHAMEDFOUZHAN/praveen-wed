@@ -1369,8 +1369,26 @@ button, a {
     font-size: clamp(28px, 6vw, 56px);
     color: var(--gold-bright);
     font-weight: 600;
-    margin: 8px 0;
+    margin: 8px 0 4px;
     line-height: 1.2;
+}
+
+.venue-alias {
+    display: inline-block;
+    background: rgba(201, 154, 69, 0.18);
+    border: 1px solid rgba(201, 154, 69, 0.45);
+    color: var(--gold-light);
+    font-size: clamp(14px, 3.2vw, 17px);
+    font-family: var(--serif);
+    padding: 6px 18px;
+    border-radius: 30px;
+    margin: 6px auto 16px;
+    letter-spacing: 0.5px;
+}
+
+.venue-alias strong {
+    color: #ffffff;
+    font-weight: 600;
 }
 
 .venue-address {

@@ -288,10 +288,10 @@ function addToGoogleCalendar() {
     const title = encodeURIComponent("Wedding of J. Praveen & M. Keerthana (Muhurtham)");
     const details = encodeURIComponent(
         "Auspicious Wedding (Muhurtham) of Selvan J. Praveen (M.Com., M.B.A) & Selvi M. Keerthana (M.A., M.Phil., Ph.D.)\n" +
-        "Venue: Baneer Kula Okkaligar Mahal, Kovai-Mettupalayam Road, Mathampalayam.\n" +
+        "Venue: Baneer Kula Okkaligar Mahal (OSBS Mahal), Kovai-Mettupalayam Road, Mathampalayam.\n" +
         "Solicited by Mr. D. Jaikumar & Mrs. J. Shanthi (Jai Agencies, Coonoor)"
     );
-    const location = encodeURIComponent("Baneer Kula Okkaligar Mahal, Kovai-Mettupalayam Road, Mathampalayam, Coimbatore, Tamil Nadu");
+    const location = encodeURIComponent("Baneer Kula Okkaligar Mahal (OSBS Mahal), Kovai-Mettupalayam Road, Mathampalayam, Coimbatore, Tamil Nadu");
     // Format: YYYYMMDDTHHMMSSZ (UTC: 20260916T223000Z / 20260916T233000Z)
     const dates = "20260916T223000Z/20260916T233000Z";
 
@@ -312,8 +312,8 @@ DTSTAMP:20260830T000000Z
 DTSTART:20260916T223000Z
 DTEND:20260916T233000Z
 SUMMARY:Wedding of J. Praveen & M. Keerthana (Muhurtham)
-DESCRIPTION:Auspicious Wedding (Muhurtham) of Selvan J. Praveen & Selvi M. Keerthana at Baneer Kula Okkaligar Mahal, Mathampalayam.
-LOCATION:Baneer Kula Okkaligar Mahal, Kovai-Mettupalayam Road, Mathampalayam, Coimbatore
+DESCRIPTION:Auspicious Wedding (Muhurtham) of Selvan J. Praveen & Selvi M. Keerthana at Baneer Kula Okkaligar Mahal (OSBS Mahal), Mathampalayam.
+LOCATION:Baneer Kula Okkaligar Mahal (OSBS Mahal), Kovai-Mettupalayam Road, Mathampalayam, Coimbatore
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
@@ -322,8 +322,8 @@ DTSTAMP:20260830T000000Z
 DTSTART:20260916T123000Z
 DTEND:20260916T153000Z
 SUMMARY:Wedding Reception of J. Praveen & M. Keerthana
-DESCRIPTION:Grand Wedding Reception of Selvan J. Praveen & Selvi M. Keerthana at Baneer Kula Okkaligar Mahal, Mathampalayam.
-LOCATION:Baneer Kula Okkaligar Mahal, Kovai-Mettupalayam Road, Mathampalayam, Coimbatore
+DESCRIPTION:Grand Wedding Reception of Selvan J. Praveen & Selvi M. Keerthana at Baneer Kula Okkaligar Mahal (OSBS Mahal), Mathampalayam.
+LOCATION:Baneer Kula Okkaligar Mahal (OSBS Mahal), Kovai-Mettupalayam Road, Mathampalayam, Coimbatore
 STATUS:CONFIRMED
 END:VEVENT
 END:VCALENDAR`;
