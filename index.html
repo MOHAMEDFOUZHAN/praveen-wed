@@ -9,15 +9,15 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <title>Praveen & Keerthana | Wedding Invitation | September 17, 2026</title>
+    <title>Praveen &amp; Keerthana | With Hearts Full of Gratitude • Thank You</title>
 
     <meta name="description"
-        content="Solicit your esteemed presence and blessings on the auspicious occasion of the marriage of Selvan J. Praveen weds Selvi M. Keerthana on September 16 & 17, 2026 at Baneer Kula Okkaligar Mahal (OSBS Mahal), Mathampalayam.">
+        content="A heartfelt thank you from Mr. &amp; Mrs. Praveen &amp; Keerthana, Mr. D. Jaikumar &amp; Mrs. J. Shanthi (Jai Agencies, Coonoor) and Mr. R. Murugesan &amp; Mrs. M. Lakshmi (Somaiyanur, Coimbatore) for gracing our wedding celebrations with your sacred blessings and love.">
     <meta name="keywords"
-        content="Praveen Keerthana Wedding, Wedding Invitation, Baneer Kula Okkaligar Mahal, OSBS Mahal, Mathampalayam, Coimbatore">
-    <meta property="og:title" content="Praveen & Keerthana — Wedding Invitation">
+        content="Praveen Keerthana Wedding Thank You, Wedding Gratitude Card, Baneer Kula Okkaligar Mahal, OSBS Mahal, Mathampalayam, Coimbatore">
+    <meta property="og:title" content="Praveen &amp; Keerthana — With Hearts Full of Gratitude">
     <meta property="og:description"
-        content="Join us to celebrate the wedding of Selvan J. Praveen & Selvi M. Keerthana on 16th & 17th September 2026.">
+        content="Thank you from the bottom of our hearts for showering your sacred blessings and love upon our wedding. Read our heartfelt gratitude message.">
     <meta property="og:type" content="website">
 
     <!-- Favicon -->
@@ -28,7 +28,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Mukta+Malar:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -37,575 +37,284 @@
 <body>
 
     <!-- =========================================================
-     LOADING SCREEN
+     PAGE LOADER
 ========================================================= -->
     <div id="loader">
         <div class="loader-content">
             <div class="loader-symbol">உ</div>
-            <p class="loader-sanskrit">॥ ஸ்ரீ குருப்யோ நமஃ ॥</p>
+            <p class="loader-sanskrit">॥ நன்றி • மனமார்ந்த நன்றிகள் ॥</p>
             <div class="loader-line"></div>
-            <p class="loader-sub">With the blessings of our families</p>
+            <p class="loader-sub">With Hearts Full of Gratitude</p>
             <h2>Praveen &amp; Keerthana</h2>
-            <span class="loader-date">16 • 17 SEPTEMBER 2026</span>
+            <span class="loader-date">JUST MARRIED &bull; SEPTEMBER 2026</span>
         </div>
     </div>
 
 
     <!-- =========================================================
-     FLOATING GOLD PETALS & CANVAS
+     FLOATING GOLD PETALS & INTERACTIVE BLESSINGS CANVAS
 ========================================================= -->
     <div class="petals" aria-hidden="true"></div>
     <canvas id="fireworksCanvas" class="fireworks-canvas" aria-hidden="true"></canvas>
 
 
     <!-- =========================================================
-     NAVIGATION
+     TOP COMPACT BAR: BRANDING & MUSIC TOGGLE
 ========================================================= -->
-    <header class="navbar">
-        <a href="#home" class="nav-logo">
-            <span class="tamil-symbol">உ</span>
-            <span class="nav-logo-text">Praveen &amp; Keerthana</span>
-        </a>
-
-        <nav id="navMenu">
-            <a href="#home">Home</a>
-            <a href="#invitation">Invitation</a>
-            <a href="#couple">The Couple</a>
-            <a href="#events">Ceremonies</a>
-            <a href="#venue">Venue &amp; Map</a>
-            <a href="#rsvp">RSVP &amp; Wishes</a>
-        </nav>
-
-        <div class="nav-right">
-            <button class="nav-music-toggle" id="navMusicToggle" title="Play / Pause Wedding Music">
-                <span class="music-icon">♫</span>
-                <span class="music-status-text">Song (0:30)</span>
-            </button>
-
-            <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <header class="top-bar">
+        <div class="top-bar-inner">
+            <div class="top-logo">
+                <span class="top-symbol">உ</span>
+                <span class="top-names">Praveen &amp; Keerthana</span>
+            </div>
+            <div class="top-actions">
+                <button class="top-music-btn" id="topMusicBtn" title="Play / Pause Wedding Melody">
+                    <span class="music-icon" id="topMusicIcon">♫</span>
+                    <span class="music-text" id="topMusicText">Play Song</span>
+                </button>
+            </div>
         </div>
     </header>
 
 
     <!-- =========================================================
-     HERO SECTION
+     MAIN GRATITUDE SHOWCASE
 ========================================================= -->
-    <section class="hero" id="home">
-        <div class="mandala mandala-left" aria-hidden="true"></div>
-        <div class="mandala mandala-right" aria-hidden="true"></div>
+    <main class="gratitude-main">
+        <div class="gratitude-wrapper">
 
-        <div class="hero-content">
-            <div class="traditional-top-badge">
-                <span class="pillaiyar-suzhi">உ</span>
-                <p class="sanskrit-heading">॥ சுபமஸ்து ॥</p>
+            <!-- Auspicious Divine Top Crest -->
+            <div class="divine-top-crest">
+                <span class="sacred-symbol">உ</span>
+                <p class="sacred-mantra">॥ சுபமஸ்து • நன்றி ॥</p>
             </div>
 
-            <!-- Sacred Divine Couple Artwork Motif -->
-            <div class="divine-motif">
-                <svg viewBox="0 0 100 100" class="divine-icon" fill="currentColor">
-                    <circle cx="50" cy="50" r="45" stroke="var(--gold-light)" stroke-width="1.5" fill="none"
-                        stroke-dasharray="3,3" />
-                    <path d="M50 18 C30 18 24 38 24 50 C24 66 38 78 50 82 C62 78 76 66 76 50 C76 38 70 18 50 18 Z"
-                        stroke="var(--gold)" stroke-width="1" fill="rgba(201,154,69,0.1)" />
-                    <path d="M38 48 C42 42 46 42 50 48 C54 42 58 42 62 48 C62 58 50 68 50 68 C50 68 38 58 38 48 Z"
-                        fill="var(--gold-light)" />
-                    <circle cx="50" cy="34" r="5" fill="var(--gold)" />
-                    <path d="M47 24 L53 24 M50 21 L50 27" stroke="var(--gold-light)" stroke-width="1.5" />
-                </svg>
-                <span class="divine-caption">Wedding Invitation</span>
-            </div>
-
-            <div class="ornament">
-                ✦ ─────── ❈ ─────── ✦
-            </div>
-
-            <div class="parents-invitation">
-                <h3 class="host-names">Mr. D. Jaikumar &mdash; Mrs. J. Shanthi</h3>
-                <p class="host-agency">Jai Agencies, Coonoor</p>
-                <p class="solicit-text">
-                    Solicit your esteemed presence and blessings with family and friends on the auspicious occasion of
-                    the Marriage of their Son
-                </p>
-            </div>
-
-            <div class="couple-hero-banner">
-                <div class="groom-hero">
-                    <span class="honorific">Selvan</span>
-                    <h1 class="groom-name">J. Praveen</h1>
-                    <span class="degrees">M.Com., M.B.A</span>
+            <!-- Grand Thank You Top Showcase -->
+            <div class="top-thank-you-showcase">
+                <div class="just-married-ribbon">
+                    <span class="ribbon-star">✦</span>
+                    <span class="ribbon-text">JUST MARRIED &bull; SOLEMNIZED 16 &amp; 17 SEPT 2026</span>
+                    <span class="ribbon-star">✦</span>
                 </div>
 
-                <div class="weds-badge">
-                    <i>weds</i>
-                </div>
+                <div class="grand-thank-you-header">
+                    <span class="thank-you-script" id="heroThankYouScript">With Sincere Gratitude</span>
+                    <h1 class="grand-thank-you-title" id="heroThankYouTitle">THANK YOU</h1>
+                    
+                    <div class="couple-union-badge" id="coupleUnionBadge" title="Tap to shower blessings on the couple!">
+                        <div class="rings-symbol">💍</div>
+                        <h2 class="couple-union-names">J. Praveen &amp; M. Keerthana</h2>
+                        <span class="couple-union-tag">&mdash; Mr. &amp; Mrs. Praveen &mdash;</span>
+                    </div>
 
-                <div class="bride-hero">
-                    <span class="honorific">Selvi</span>
-                    <h1 class="bride-name">M. Keerthana</h1>
-                    <span class="degrees">M.A., M.Phil., Ph.D.</span>
-                    <p class="bride-parentage">(D/o. Mr. R. Murugesan &mdash; Mrs. M. Lakshmi, Somaiyanur, Cbe)</p>
+                    <p class="top-thank-you-sub" id="heroThankYouSub">
+                        Thank you from the bottom of our hearts for showering your sacred blessings, presence, and love upon our wedding.
+                    </p>
                 </div>
             </div>
 
-            <div class="ornament">
-                ✦ ─────── ❈ ─────── ✦
-            </div>
-
-            <div class="hero-meta-strip">
-                <div class="meta-item">
-                    <span class="meta-label">MUHURTHAM</span>
-                    <strong class="meta-val">Thu, 17 Sept 2026</strong>
-                    <span class="meta-time">4:00 AM &ndash; 5:00 AM</span>
-                </div>
-                <div class="meta-divider"></div>
-                <div class="meta-item">
-                    <span class="meta-label">RECEPTION</span>
-                    <strong class="meta-val">Wed, 16 Sept 2026</strong>
-                    <span class="meta-time">6:00 PM &ndash; 9:00 PM</span>
-                </div>
-                <div class="meta-divider"></div>
-                <div class="meta-item">
-                    <span class="meta-label">VENUE</span>
-                    <strong class="meta-val">Baneer Kula Okkaligar Mahal</strong>
-                    <span class="meta-time">(OSBS Mahal) &bull; Mathampalayam, Cbe</span>
+            <!-- Language Switcher Tab -->
+            <div class="lang-switch-wrapper">
+                <span class="lang-label">Read Message in:</span>
+                <div class="lang-buttons">
+                    <button type="button" class="lang-btn active" id="btnLangEn" onclick="switchLanguage('en')">
+                        <span class="lang-flag">🇬🇧</span> English
+                    </button>
+                    <button type="button" class="lang-btn" id="btnLangTa" onclick="switchLanguage('ta')">
+                        <span class="lang-flag">🇮🇳</span> தமிழ்
+                    </button>
                 </div>
             </div>
 
-            <div class="hero-actions">
-                <a href="#events" class="gold-btn">
-                    <span>View Ceremonies</span>
-                </a>
-                <a href="#venue" class="gold-btn gold-btn-outline">
-                    <span>Mahal Location &amp; Map</span>
-                </a>
-                <button class="gold-btn gold-btn-music" id="heroPlayMusicBtn">
-                    <span class="btn-icon">♫</span>
-                    <span>Play Wedding Music</span>
+            <!-- Royal Parchment Thank You Card -->
+            <div class="royal-parchment-card" id="royalParchmentCard">
+                <!-- Golden Corner Filigree Ornaments -->
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-tr"></div>
+                <div class="corner corner-bl"></div>
+                <div class="corner corner-br"></div>
+
+                <!-- Interactive Wax Seal -->
+                <button class="wax-seal-btn" id="waxSealBtn" title="Click to shower golden Akshathai blessings!">
+                    <div class="wax-circle">
+                        <span class="wax-symbol">உ</span>
+                    </div>
+                    <span class="wax-ribbon wax-ribbon-l"></span>
+                    <span class="wax-ribbon wax-ribbon-r"></span>
                 </button>
-            </div>
-        </div>
 
-        <a href="#invitation" class="scroll-indicator" aria-label="Scroll Down">
-            <span>Scroll to Explore</span>
-            <div></div>
-        </a>
-    </section>
+                <div class="card-inner-content">
 
-
-    <!-- =========================================================
-     FORMAL INVITATION CARD SECTION
-========================================================= -->
-    <section class="invitation-card-section section" id="invitation">
-        <div class="section-inner reveal">
-            <p class="small-title">AUSPICIOUS BLESSINGS</p>
-            <h2 class="section-title">Royal Wedding Invitation</h2>
-            <div class="ornament">✦ ─── ❈ ─── ✦</div>
-
-            <div class="formal-card">
-                <div class="card-border-frame">
-                    <div class="corner corner-tl"></div>
-                    <div class="corner corner-tr"></div>
-                    <div class="corner corner-bl"></div>
-                    <div class="corner corner-br"></div>
-
-                    <div class="card-header-symbol">
-                        <span class="tamil-big">உ</span>
-                    </div>
-
-                    <h3 class="card-heading">Wedding Invitation</h3>
-
-                    <div class="card-parents">
-                        <h4>Mr. D. Jaikumar &mdash; Mrs. J. Shanthi</h4>
-                        <p class="agency-tag">Jai Agencies, Coonoor</p>
-                    </div>
-
-                    <p class="card-solicitation">
-                        Solicit your esteemed presence and blessings with family and friends on the auspicious occasion
-                        of the Marriage of their Son
-                    </p>
-
-                    <div class="card-couple-block">
-                        <div class="card-person">
-                            <span class="title-prefix">Selvan:</span>
-                            <h2 class="person-title">J. Praveen</h2>
-                            <span class="qualification">M.Com., M.B.A</span>
+                    <!-- ENGLISH VERSION -->
+                    <div class="lang-content-box" id="contentEn">
+                        <div class="card-header">
+                            <span class="tamil-kural-quote">॥ அன்பும் அறனும் உடைத்தாயின் இல்வாழ்க்கை பண்பும் பயனும் அது ॥</span>
+                            <p class="greeting-pre">To Our Beloved Elders, Family Members, Relatives, and Friends</p>
+                            <h1 class="card-main-title">With Hearts Full of Gratitude, Thank You!</h1>
+                            <div class="ornament-line">✦ ────── ❈ ────── ✦</div>
                         </div>
 
-                        <div class="card-weds-script">
-                            <span>weds</span>
-                        </div>
+                        <div class="letter-body-text">
+                            <p class="opening-para">
+                                As the sacred Vedic mantras settle and we take our very first steps together as husband and wife,
+                                our hearts overflow with boundless humility, joy, and deep gratitude.
+                            </p>
 
-                        <div class="card-person">
-                            <span class="title-prefix">Selvi:</span>
-                            <h2 class="person-title">M. Keerthana</h2>
-                            <span class="qualification">M.A., M.Phil., Ph.D.</span>
-                            <p class="parents-sub">(D/o. Mr. R. Murugesan &mdash; Mrs. M. Lakshmi, Somaiyanur, Cbe)</p>
+                            <p>
+                                Our wedding day on <strong>September 16 &amp; 17, 2026</strong> was transformed into a truly divine and
+                                unforgettable blessing because of <strong>your presence</strong>. To each of you who traveled from near and far,
+                                joined us during the auspicious Brahma Muhurtham, and showered us with sacred <em>Akshathai</em> and fragrant flower petals &mdash;
+                                words can scarcely capture how deeply touched we are.
+                            </p>
+
+                            <p>
+                                To all our dear family and friends who sent their heartfelt prayers, calls, and thoughtful wishes from across the globe,
+                                your affection wrapped around us like a blanket of divine grace. Every warm smile, hearty laugh, affectionate hug,
+                                and blessing bestowed upon us will echo in our home forever.
+                            </p>
+
+                            <div class="gratitude-quote-box">
+                                <span class="quote-symbol">“</span>
+                                <p>
+                                    A wedding is celebrated in a day, but the love, prayers, and sacred blessings given by all of you
+                                    will illuminate our path for a lifetime.
+                                </p>
+                                <div class="quote-stars">✦ ✦ ✦</div>
+                            </div>
+
+                            <p>
+                                As we embark on this sacred journey of companionship, mutual respect, and shared dreams, we seek
+                                your continued blessings, guidance, and affection. You will always hold a cherished place in our hearts and our home.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card-ceremonies-grid">
-                        <div class="ceremony-box muhurtham-highlight">
-                            <span class="ceremony-tag">AUSPICIOUS MUHURTHAM</span>
-                            <p class="ceremony-datetime">On Thursday 17<sup>th</sup> September 2026</p>
-                            <p class="ceremony-time">between 4.00 a.m. and 5.00 a.m.</p>
-                            <p class="ceremony-place">at <strong>Baneer Kula Okkaligar Mahal</strong> (OSBS Mahal),<br>Kovai-Mettupalayam Road, Mathampalayam</p>
+                    <!-- TAMIL VERSION -->
+                    <div class="lang-content-box hidden" id="contentTa">
+                        <div class="card-header">
+                            <span class="tamil-kural-quote">॥ அன்பும் அறனும் உடைத்தாயின் இல்வாழ்க்கை பண்பும் பயனும் அது ॥</span>
+                            <p class="greeting-pre">எங்கள் பேரன்பிற்குரிய பெரியோர்கள், உற்றார், உறவினர்கள் மற்றும் நல்உள்ளங்களுக்கு</p>
+                            <h1 class="card-main-title">மனமார்ந்த நெஞ்சார்ந்த நன்றிகள்!</h1>
+                            <div class="ornament-line">✦ ────── ❈ ────── ✦</div>
                         </div>
 
-                        <div class="ceremony-box reception-highlight">
-                            <span class="ceremony-tag">GRAND RECEPTION</span>
-                            <p class="ceremony-datetime">On Wednesday 16<sup>th</sup> September 2026</p>
-                            <p class="ceremony-time">between 6.00 p.m. and 9.00 p.m.</p>
-                            <p class="ceremony-place">at <strong>Baneer Kula Okkaligar Mahal</strong> (OSBS Mahal),<br>Kovai-Mettupalayam Road, Mathampalayam</p>
+                        <div class="letter-body-text tamil-font-body">
+                            <p class="opening-para">
+                                மங்கல நாண் பூட்டி, பெரியோர்களின் ஆசிகளோடு நாங்கள் இருவரும் இல்லற வாழ்வின் புதிய பயணத்தைத் தொடங்கியுள்ள இந்நேரத்தில், எங்கள் நெஞ்சம் முழுவதும் மகிழ்ச்சியும் எல்லையில்லா நன்றியுணர்வும் நிறைந்துள்ளது.
+                            </p>
+
+                            <p>
+                                கடந்த <strong>செப்டம்பர் 16 மற்றும் 17, 2026</strong> அன்று நடைபெற்ற எங்கள் திருமண விழாவிற்கு நேரில் வருகை தந்து, எங்களை மனமார வாழ்த்தி, புனித <em>அட்சதை</em> மற்றும் மலர்கள் தூவி ஆசீர்வதித்த உங்கள் ஒவ்வொருவருக்கும் எங்கள் சிரம் தாழ்ந்த நன்றிகளை சமர்ப்பிக்கிறோம்.
+                            </p>
+
+                            <p>
+                                பல பணிகள் மற்றும் தூரங்களைக் கடந்து வருகை தந்தவர்களுக்கும், நேரில் வர இயலாவிட்டாலும் தொலைபேசி மற்றும் செய்திகள் வழியாக அன்பான வாழ்த்துகளையும் பிரார்த்தனைகளையும் அனுப்பி வைத்த அனைத்து உற்றார், உறவினர்கள், நண்பர்களுக்கும் எங்கள் இதயம் கனிந்த நன்றிகள்.
+                            </p>
+
+                            <div class="gratitude-quote-box">
+                                <span class="quote-symbol">“</span>
+                                <p>
+                                    திருமணம் என்பது ஒரு நன்னாளில் நிகழும் வைபவம்; ஆனால் நீங்கள் அனைவரும் மனமுவந்து தந்த ஆசிகளும் அன்பும், எங்கள் வாழ்நாள் முழுவதும் எங்களுக்கு வழிகாட்டும் ஒளிவிளக்காகும்.
+                                </p>
+                                <div class="quote-stars">✦ ✦ ✦</div>
+                            </div>
+
+                            <p>
+                                அன்பு, அமைதி, மகிழ்ச்சி நிறைந்த ஒரு இனிய புது வாழ்க்கையைத் தொடங்கும் நாங்கள், உங்கள் அனைவரின் மேலான ஆசிகளையும் நல்வாழ்த்துகளையும் எப்போதும் வேண்டுகிறோம்.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card-compliments">
-                        <p>With Best Compliments from:</p>
-                        <h5 class="compliment-names">Friends &amp; Relatives</h5>
+                    <!-- Signatures of Newlyweds & Both Families -->
+                    <div class="signatures-container">
+                        <div class="couple-signature">
+                            <p class="sig-note">With Boundless Love &amp; Respect,</p>
+                            <h4 class="sig-couple-names">J. Praveen &amp; M. Keerthana</h4>
+                            <span class="sig-tag">Mr. &amp; Mrs. Praveen</span>
+                        </div>
+
+                        <div class="parents-signature">
+                            <p class="sig-note">With Deep Gratitude from Both Families,</p>
+                            <div class="parents-two-col">
+                                <div class="p-col">
+                                    <strong>Mr. D. Jaikumar &amp; Mrs. J. Shanthi</strong>
+                                    <span>Jai Agencies, Coonoor</span>
+                                </div>
+                                <div class="p-col">
+                                    <strong>Mr. R. Murugesan &amp; Mrs. M. Lakshmi</strong>
+                                    <span>Somaiyanur, Coimbatore</span>
+                                </div>
+                            </div>
+                            <p class="compliments-note">With Best Compliments from Relatives &amp; Friends</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
+                    <!-- Interactive Action Bar Inside Card -->
+                    <div class="card-action-bar">
+                        <button class="gold-action-btn shower-btn" id="cardShowerBtn">
+                            <span class="btn-icon">🌸</span>
+                            <span id="showerBtnText">Shower Blessings &amp; Flowers</span>
+                        </button>
 
-    <!-- =========================================================
-     COUPLE PROFILE SECTION
-========================================================= -->
-    <section class="couple section" id="couple">
-        <div class="couple-decoration"></div>
+                        <a href="https://wa.me/?text=✨%20Praveen%20%26%20Keerthana%20Wedding%20—%20With%20Hearts%20Full%20of%20Gratitude%20✨%0A%0AOur%20wedding%20celebration%20was%20made%20truly%20divine%20and%20unforgettable%20by%20your%20loving%20presence%2C%20warm%20prayers%2C%20and%20sacred%20blessings!%0A%0ARead%20our%20heartfelt%20thank-you%20message%20here%3A%20"
+                            target="_blank" rel="noopener" class="gold-action-btn whatsapp-btn" id="shareWhatsAppBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                            </svg>
+                            <span>Share on WhatsApp</span>
+                        </a>
 
-        <div class="section-heading reveal">
-            <p class="small-title">THE BEGINNING OF FOREVER</p>
-            <h2>Two Hearts. One Journey.</h2>
-            <div class="ornament">✦ ─── ❈ ─── ✦</div>
-            <p class="section-subtext">Joined together in sacred bond, blessed by parents, elders and almighty.</p>
-        </div>
-
-        <div class="couple-container">
-            <!-- GROOM -->
-            <div class="person reveal">
-                <div class="photo-frame">
-                    <img src="images/groom.svg" onerror="this.src='images/groom.jpg'"
-                        alt="Selvan J. Praveen - The Groom" loading="lazy">
-                    <div class="photo-badge">Groom</div>
-                </div>
-
-                <p class="role">SELVAN</p>
-                <h3>J. Praveen</h3>
-                <p class="edu-badge">M.Com., M.B.A</p>
-
-                <div class="person-bio">
-                    <p>
-                        Son of<br>
-                        <strong>Mr. D. Jaikumar &amp; Mrs. J. Shanthi</strong><br>
-                        <span>Jai Agencies, Coonoor</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="ampersand reveal">
-                <span>&amp;</span>
-            </div>
-
-            <!-- BRIDE -->
-            <div class="person reveal">
-                <div class="photo-frame">
-                    <img src="images/bride.svg" onerror="this.src='images/bride.jpg'"
-                        alt="Selvi M. Keerthana - The Bride" loading="lazy">
-                    <div class="photo-badge">Bride</div>
-                </div>
-
-                <p class="role">SELVI</p>
-                <h3>M. Keerthana</h3>
-                <p class="edu-badge">M.A., M.Phil., Ph.D.</p>
-
-                <div class="person-bio">
-                    <p>
-                        Daughter of<br>
-                        <strong>Mr. R. Murugesan &amp; Mrs. M. Lakshmi</strong><br>
-                        <span>Somaiyanur, Coimbatore</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- =========================================================
-     COUNTDOWN SECTION
-========================================================= -->
-    <section class="countdown-section" id="countdown">
-        <div class="countdown-overlay"></div>
-
-        <div class="countdown-content reveal">
-            <p class="small-title">COUNTING DOWN TO THE SACRED MUHURTHAM</p>
-            <h2>The Auspicious Moment</h2>
-            <p class="countdown-target-label">Thursday, 17th September 2026 &bull; 04:00 AM IST</p>
-
-            <div class="countdown">
-                <div class="count-box">
-                    <strong id="days">00</strong>
-                    <span>Days</span>
-                </div>
-
-                <div class="count-box">
-                    <strong id="hours">00</strong>
-                    <span>Hours</span>
-                </div>
-
-                <div class="count-box">
-                    <strong id="minutes">00</strong>
-                    <span>Minutes</span>
-                </div>
-
-                <div class="count-box">
-                    <strong id="seconds">00</strong>
-                    <span>Seconds</span>
-                </div>
-            </div>
-
-            <div class="calendar-actions">
-                <button class="cal-btn" onclick="addToGoogleCalendar()">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z" />
-                    </svg>
-                    <span>Add to Google Calendar</span>
-                </button>
-                <button class="cal-btn" onclick="downloadICal()">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
-                    </svg>
-                    <span>Save to Apple / Outlook (.ics)</span>
-                </button>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- =========================================================
-     EVENTS / TIMELINE
-========================================================= -->
-    <section class="events section" id="events">
-        <div class="section-heading reveal">
-            <p class="small-title">PROGRAMME &amp; TIMINGS</p>
-            <h2>Wedding Ceremonies</h2>
-            <div class="ornament">✦ ─── ❈ ─── ✦</div>
-        </div>
-
-        <div class="timeline">
-            <!-- RECEPTION -->
-            <div class="event reveal">
-                <div class="event-time-col">
-                    <span class="event-badge">Day 1</span>
-                    <div class="event-time">06:00 PM &ndash; 09:00 PM</div>
-                    <div class="event-date">Wed, 16 Sept 2026</div>
-                </div>
-
-                <div class="event-line"></div>
-
-                <div class="event-content">
-                    <span class="event-eyebrow">GRAND WELCOME &amp; CELEBRATION</span>
-                    <h3>Wedding Reception</h3>
-                    <p>
-                        Join us for an enchanting musical evening of grand celebration, greeting the lovely couple,
-                        sharing joy, and feasting on a sumptuous dinner banquet with friends and family.
-                    </p>
-                    <div class="event-venue-tag">
-                        <span>📍 Baneer Kula Okkaligar Mahal (OSBS Mahal), Mathampalayam</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- MUHURTHAM -->
-            <div class="event reveal highlight-event">
-                <div class="event-time-col">
-                    <span class="event-badge gold-badge">Day 2 &bull; Sacred</span>
-                    <div class="event-time">04:00 AM &ndash; 05:00 AM</div>
-                    <div class="event-date">Thu, 17 Sept 2026</div>
-                </div>
-
-                <div class="event-line"></div>
-
-                <div class="event-content">
-                    <span class="event-eyebrow">BRAHMA MUHURTHAM &bull; AUSPICIOUS WEDDING</span>
-                    <h3>Sacred Muhurtham</h3>
-                    <p>
-                        In the sacred early morning hours with chanting of Vedic hymns and Nadhaswaram melodies, Praveen
-                        and Keerthana will exchange garlands and tie the holy mangalsutra, embarking on their lifelong
-                        journey of love and unity.
-                    </p>
-                    <div class="event-venue-tag">
-                        <span>📍 Baneer Kula Okkaligar Mahal (OSBS Mahal), Mathampalayam</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- =========================================================
-     VENUE & GOOGLE MAPS
-========================================================= -->
-    <section class="venue section" id="venue">
-        <div class="venue-content reveal">
-            <p class="small-title">LOCATION &amp; DIRECTIONS</p>
-            <h2>Baneer Kula Okkaligar Mahal</h2>
-            <div class="venue-alias">✨ Also locally known as <strong>OSBS Mahal</strong></div>
-            <p class="venue-address">
-                Kovai-Mettupalayam Road, Mathampalayam,<br>
-                Coimbatore, Tamil Nadu, India
-            </p>
-
-            <div class="venue-actions">
-                <a href="https://maps.app.goo.gl/TPdSq3KUUAvtuGfc6?g_st=aw"
-                    target="_blank" rel="noopener" class="gold-btn">
-                    <span>Open in Google Maps</span>
-                </a>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=6X27%2BGVX+OSBS+Mahal,+Mathampalayam,+Bilichi,+Tamil+Nadu+641019"
-                    target="_blank" rel="noopener" class="gold-btn gold-btn-outline">
-                    <span>Get Driving Directions</span>
-                </a>
-            </div>
-
-            <div class="map-container reveal">
-                <iframe title="Baneer Kula Okkaligar Mahal (OSBS Mahal) Location Map"
-                    src="https://maps.google.com/maps?q=6X27%2BGVX+OSBS+Mahal,+Mathampalayam,+Bilichi,+Tamil+Nadu+641019&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                    width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- =========================================================
-     QR CODE & RSVP SECTION
-========================================================= -->
-    <section class="rsvp section" id="rsvp">
-        <div class="rsvp-container reveal">
-            <div class="rsvp-content">
-                <p class="small-title">YOUR PRESENCE IS OUR GREATEST GIFT</p>
-                <h2>Celebrate With Us</h2>
-                <p>
-                    Your esteemed presence, heartfelt blessings, and warm smiles will make this sacred milestone truly
-                    unforgettable for Praveen, Keerthana, and both families.
-                </p>
-
-                <div class="rsvp-btn-group">
-                    <a href="https://wa.me/?text=Dear%20Praveen%20%26%20Keerthana%2C%20Congratulations%20on%20your%20Wedding!%20We%20are%20excited%20to%20attend%20your%20celebration%20at%20Baneer%20Kula%20Okkaligar%20Mahal%20(OSBS%20Mahal)%20on%20Sept%2016-17%2C%202026."
-                        target="_blank" rel="noopener" class="gold-btn whatsapp-btn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
-                        </svg>
-                        <span>RSVP on WhatsApp</span>
-                    </a>
-                </div>
-
-                <!-- Send Wishes Card -->
-                <div class="wishes-input-card">
-                    <h4>Send Wishes to the Couple</h4>
-                    <div class="wish-form">
-                        <input type="text" id="guestName" placeholder="Your Name" class="wish-input">
-                        <textarea id="guestMessage" placeholder="Write your heartfelt blessing..." rows="2"
-                            class="wish-textarea"></textarea>
-                        <button class="gold-btn wish-submit-btn" id="sendWishBtn">
-                            <span>Send Blessing 🌸</span>
+                        <button class="gold-action-btn outline-btn" id="copyLinkBtn">
+                            <span class="btn-icon">🔗</span>
+                            <span id="copyLinkText">Copy Link</span>
                         </button>
                     </div>
-                    <div id="wishSuccessMsg" class="wish-success-msg">
-                        ✨ Thank you! Your warm blessings have been showered upon Praveen &amp; Keerthana!
+
+                    <!-- Live Blessing Counter Badge -->
+                    <div class="blessing-tally-bar">
+                        <span class="tally-sparkle">✨</span>
+                        <span><strong id="blessingCounterDisplay">2,150+</strong> Blessings Showered by Loved Ones</span>
                     </div>
+
                 </div>
             </div>
 
-            <div class="qr-box">
-                <a href="https://maps.app.goo.gl/TPdSq3KUUAvtuGfc6?g_st=aw" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; display: block;">
-                    <div class="qr-inner">
-                        <div class="qr-icon-top">📍</div>
-                        <h4>Scan for Venue Map</h4>
-                        <p class="qr-sub">Baneer Kula Okkaligar Mahal<br><span style="font-size: 11.5px; opacity: 0.95; font-weight: 600; color: var(--gold-dark);">(OSBS Mahal)</span></p>
-                        <div class="qr-image-wrapper">
-                            <!-- High definition vector QR representation for exact map link -->
-                            <img src="images/qr.svg" onerror="this.src='images/qr.png'" alt="Google Maps QR Code"
-                                class="qr-image">
-                        </div>
-                        <p class="qr-foot">Scan with phone camera or tap to navigate</p>
-                    </div>
-                </a>
-            </div>
+            <!-- Footer Quote & Copyright -->
+            <footer class="gratitude-footer">
+                <div class="ornament-line">✦ ────── ❈ ────── ✦</div>
+                <p class="footer-blessing-quote">
+                    “May joy, peace, and eternal togetherness grace their home forever.”
+                </p>
+                <small class="footer-meta">
+                    Mr. &amp; Mrs. Praveen &amp; Keerthana &bull; Joined in Holy Matrimony &bull; September 2026
+                </small>
+            </footer>
+
         </div>
-    </section>
+    </main>
 
 
     <!-- =========================================================
-     COMPLIMENTS & BLESSINGS QUOTE
-========================================================= -->
-    <section class="wishes section">
-        <div class="wishes-content reveal">
-            <div class="quote-mark">“</div>
-            <h2>With Best Compliments</h2>
-            <h3 class="compliments-highlight">Friends &amp; Relatives</h3>
-
-            <p class="quote-body">
-                May your marriage be blessed with love, understanding, endless happiness, and divine prosperity through
-                every chapter of life.
-            </p>
-
-            <div class="ornament">
-                ✦ ─────── ❈ ─────── ✦
-            </div>
-
-            <p class="hosts-bottom-signature">
-                Mr. D. Jaikumar &amp; Mrs. J. Shanthi<br>
-                <small>Jai Agencies, Coonoor</small>
-            </p>
-        </div>
-    </section>
-
-
-    <!-- =========================================================
-     FOOTER
-========================================================= -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-symbol">உ</div>
-            <h3 class="footer-names">Praveen &amp; Keerthana</h3>
-            <p class="footer-wedding-date">16<sup>th</sup> &amp; 17<sup>th</sup> September 2026 &bull; Mathampalayam,
-                Coimbatore</p>
-            <div class="footer-line"></div>
-            <small>&copy; 2026 Wedding Celebration &bull; With Best Compliments from Friends &amp; Relatives</small>
-        </div>
-    </footer>
-
-
-    <!-- =========================================================
-     LUXURY FLOATING MUSIC PLAYER WIDGET
+     FLOATING AUDIO PLAYER WIDGET
 ========================================================= -->
     <div class="floating-music-widget" id="floatingMusicWidget">
         <div class="music-disc-badge" id="musicDiscBadge">
             <span class="disc-art">💍</span>
         </div>
         <div class="music-info">
-            <span class="music-label">Wedding Song (53s &ndash; 83s)</span>
+            <span class="music-label">Wedding Song Snippet</span>
             <div class="music-track-title">Praveen &amp; Keerthana Melodies</div>
             <div class="music-progress-container">
                 <div class="music-progress-bar" id="musicProgressBar"></div>
             </div>
         </div>
-        <button class="music-control-btn" id="musicBtn" title="Play / Pause Song (30s snippet)">
+        <button class="music-control-btn" id="musicBtn" title="Play / Pause Song">
             <span id="musicBtnIcon">♫</span>
         </button>
     </div>
 
-    <!-- Audio element referencing the audio file with loop configuration -->
+    <!-- Audio Element -->
     <audio id="weddingMusic" preload="auto">
         <source src="music/wedding-song.mpeg" type="audio/mpeg">
         <source src="music/wedding-song.mp3" type="audio/mp3">
